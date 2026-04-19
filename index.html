@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aegis Network Auditor | Pitch Day</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero-pattern {
+            background-image: radial-gradient(#1e293b 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+            box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.2);
+        }
+    </style>
+</head>
+
+<body class="hero-pattern">
+
+    <nav class="fixed w-full z-50 bg-slate-950/90 backdrop-blur-lg border-b border-slate-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-black text-sky-500 tracking-tighter italic">AEGIS_AUDITOR</h1>
+            <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest">
+                <a href="#problem" class="hover:text-sky-400 transition">Muammo</a>
+                <a href="#tech" class="hover:text-sky-400 transition">Texnologiyalar</a>
+                <a href="#team" class="hover:text-sky-400 transition">Jamoa</a>
+                <a href="#demo" class="text-sky-400 border border-sky-400 px-4 py-1 rounded">Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex flex-col items-center justify-center px-4 text-center">
+        <div
+            class="inline-block px-3 py-1 mb-6 border border-sky-500/30 bg-sky-500/10 rounded-full text-sky-400 text-xs font-bold uppercase tracking-widest">
+            Hackathon 2026 | Pitch Day
+        </div>
+        <h2 class="text-6xl md:text-8xl font-black mb-6 tracking-tight">
+            AEGIS <span class="text-sky-500">AI</span>
+        </h2>
+        <p class="text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed">
+            Tarmoq auditi, DoS himoyasi va Fishing tahlili uchun yaratilgan aqlli xavfsizlik platformasi.
+        </p>
+        <div class="flex flex-col md:flex-row gap-5">
+            <a href="https://youtu.be/L8lAqs06Tgg?si=NgiObbK4sBcugufo" target="_blank"
+                class="bg-sky-500 hover:bg-sky-400 text-slate-950 px-10 py-4 rounded-xl font-black text-lg transition-all flex items-center justify-center gap-3">
+                <i class="fab fa-youtube text-2xl"></i> LOYIHANI KO'RISH (DEMO)
+            </a>
+        </div>
+    </section>
+
+    <section id="tech" class="py-24 bg-slate-950/50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-16 text-center italic">TEXNOLOGIK STAK</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="tech-card p-6 bg-slate-900 border border-slate-800 rounded-2xl transition-all">
+                    <i class="fas fa-server text-3xl text-sky-500 mb-4"></i>
+                    <h4 class="text-xl font-bold mb-2">Backend</h4>
+                    <p class="text-slate-400 text-sm">Python & FastAPI yordamida yuqori tezlikdagi asinxron API. Tarmoq
+                        trafigini real vaqtda tahlil qilish uchun Scapy integratsiyasi.</p>
+                </div>
+                <div class="tech-card p-6 bg-slate-900 border border-slate-800 rounded-2xl transition-all">
+                    <i class="fas fa-brain text-3xl text-emerald-500 mb-4"></i>
+                    <h4 class="text-xl font-bold mb-2">AI Engine</h4>
+                    <p class="text-slate-400 text-sm">Ollama (Llama 3) va LangChain. Skanerlash natijalarini inson
+                        tiliga o'girish va kiber-xavflarni bashorat qilish.</p>
+                </div>
+                <div class="tech-card p-6 bg-slate-900 border border-slate-800 rounded-2xl transition-all">
+                    <i class="fas fa-shield-virus text-3xl text-red-500 mb-4"></i>
+                    <h4 class="text-xl font-bold mb-2">Security</h4>
+                    <p class="text-slate-400 text-sm">Nmap SDK orqali portlarni audit qilish. DoS va Fishing hujumlarini
+                        simulyatsiya qilish hamda aniqlash modullari.</p>
+                </div>
+                <div class="tech-card p-6 bg-slate-900 border border-slate-800 rounded-2xl transition-all">
+                    <i class="fas fa-desktop text-3xl text-purple-500 mb-4"></i>
+                    <h4 class="text-xl font-bold mb-2">Interface</h4>
+                    <p class="text-slate-400 text-sm">React va Tailwind CSS. Ma'lumotlarni vizualizatsiya qilish va
+                        qulay monitoring dashboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-24 px-4">
+        <div class="container mx-auto max-w-5xl">
+            <h3 class="text-3xl font-bold mb-16 text-center italic">PROFESSIONAL JAMOA</h3>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="text-center group">
+                    <div
+                        class="w-24 h-24 bg-sky-500/20 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:bg-sky-500 transition">
+                        <i class="fas fa-code text-3xl"></i>
+                    </div>
+                    <h5 class="font-bold text-lg">Boliyev Ravshan</h5>
+                    <p class="text-sky-500 text-xs uppercase tracking-widest font-bold">Backend & DevOps</p>
+                </div>
+                <div class="text-center group">
+                    <div
+                        class="w-24 h-24 bg-emerald-500/20 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:bg-emerald-500 transition">
+                        <i class="fas fa-layer-group text-3xl"></i>
+                    </div>
+                    <h5 class="font-bold text-lg">Muhiddinov N.</h5>
+                    <p class="text-emerald-500 text-xs uppercase tracking-widest font-bold">Fullstack Dev</p>
+                </div>
+                <div class="text-center group">
+                    <div
+                        class="w-24 h-24 bg-purple-500/20 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:bg-purple-500 transition">
+                        <i class="fas fa-pen-nib text-3xl"></i>
+                    </div>
+                    <h5 class="font-bold text-lg">Yunusov Xumoyun</h5>
+                    <p class="text-purple-500 text-xs uppercase tracking-widest font-bold">UI/UX Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap" class="py-20 bg-slate-900/30 px-4">
+        <div class="max-w-4xl mx-auto border border-slate-800 p-10 rounded-3xl bg-slate-950">
+            <h3 class="text-2xl font-bold mb-8 italic">LOVIHA YO'L XARITASI</h3>
+            <div class="space-y-6">
+                <div class="flex items-center gap-4 text-slate-500 line-through">
+                    <div class="w-4 h-4 rounded-full bg-slate-700"></div>
+                    <p>Idea: Kontseptual rejalashtirish va arxitektura</p>
+                </div>
+                <div class="flex items-center gap-4 text-sky-400 animate-pulse">
+                    <div class="w-4 h-4 rounded-full bg-sky-500 shadow-[0_0_10px_#38bdf8]"></div>
+                    <p class="font-bold underline">MVP: DoS/Fishing modullari va AI integratsiyasi</p>
+                </div>
+                <div class="flex items-center gap-4 text-slate-500">
+                    <div class="w-4 h-4 rounded-full border border-slate-700"></div>
+                    <p>Launch: To'liq avtomatlashtirilgan kiber-audit platformasi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-600 text-xs tracking-widest">
+        AEGIS PROJECT | 2026 | BUXORO - SCHOOL 102
+    </footer>
+
+</body>
+
+</html>
